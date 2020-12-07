@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+
+  db:
+    build:
+      target: base
+    ports:
+      - 5432:5432
+
+  <%= serviceName %>:
+    ports:
+      - 3000:3000
